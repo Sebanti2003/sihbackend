@@ -16,7 +16,7 @@ app.use(
   })
 );
 app.use(express.static("public"));
-app.use("api/v1/images", imagerouter);
+app.use("/api/v1/images", imagerouter);
 app.listen(3000, () => {
   console.log("server is running on port 3000");
 });
